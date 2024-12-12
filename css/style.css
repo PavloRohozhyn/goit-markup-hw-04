@@ -127,10 +127,10 @@ address {
 .header-nav-link-active {
     position: relative;
     color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link-activ::after {
+.header-nav-link-active::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -186,7 +186,6 @@ address {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .container-hero {
@@ -220,6 +219,7 @@ address {
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-hero-btn:hover,
@@ -245,7 +245,7 @@ address {
 }
 
 .section-val {
-    padding: 120px 0
+    padding: 120px 0;
 }
 
 .container-val {
@@ -332,7 +332,7 @@ address {
 }
 
 .section-team-desc {
-    padding: 32px 0
+    padding: 32px 0;
 }
 
 .section-team-name {
@@ -343,7 +343,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
-    margin-bottom: 8px
+    margin-bottom: 8px;
 }
 
 .section-team-pos {
@@ -360,6 +360,11 @@ address {
     display: flex;
     justify-content: center;
     gap: 24px;
+}
+
+.section-team-socials-item {
+    width: 40px;
+    height: 40px;
 }
 
 .section-team-socials-link {
@@ -422,6 +427,7 @@ address {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
 }
 
 .section-portfolio-img {
@@ -459,7 +465,7 @@ address {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    margin-bottom: 8px
+    margin-bottom: 8px;
 }
 
 .section-portfolio-tag {
@@ -477,7 +483,7 @@ address {
 /* #region Footer */
 .footer {
     background-color: var(--navy-blue);
-    padding: 100px 0
+    padding: 100px 0;
 }
 
 .container-footer {
@@ -518,7 +524,7 @@ address {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--cloud);
-    max-width: 264px
+    max-width: 264px;
 }
 
 .footer-socials-text {
@@ -528,7 +534,6 @@ address {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-
 }
 
 .footer-socials-list {
@@ -539,8 +544,8 @@ address {
 .footer-socials-item {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .footer-socials-link {
     width: 100%;
@@ -551,7 +556,6 @@ address {
     align-items: center;
     justify-content: center;
     background-color: #31d0aa;
-
 }
 
 .footer-socials-link:hover,
@@ -561,7 +565,6 @@ address {
 
 .footer-socials-icon {
     fill: #f4f4fd;
-
 }
 
 /* #endregion */
